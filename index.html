@@ -1,0 +1,112 @@
+<style>
+    @font-face {
+        font-family: ka1;
+        src: url(./fonts/ka1.ttf);
+    }
+
+    @font-face {
+        font-family: rainyhearts;
+        src: url(./fonts/rainyhearts.ttf);
+    }
+
+    body {
+        background-color: #8F8583;
+        color: #eaee06;
+        font-family: "rainyhearts";
+        font-size: 1vh;
+        margin: 0;
+        padding: 0;
+        /* display: flex; */
+        /* use my picture as background  and make it fit the screen*/
+        /* background-image: url("Felipe0234.jpg");
+        background-image: url("Felipe0265.jpg"); */
+        /* background-image: url("Felipe0269.jpg"); */
+        background-size: cover;
+        
+    }
+
+    .accent {
+        background-color: #eaee06;
+        color: red;
+        font-family: "ka1";
+    }
+    
+    /* accent hover class, with bg color and color swapped */
+    .accent:hover {
+        background-color: red;
+        color: #eaee06;
+    }
+
+    button {
+        border: 0.5em solid black;
+        padding: 1.2em;
+
+        /* margin-top: 2em;
+        margin-bottom: 2em; */
+        margin: 1em;
+        font-size: 2vh;
+        cursor: pointer;
+    }
+
+    .profile_cropped {
+    width: 300px; 
+    height: 200px; 
+    object-fit: cover;
+    object-position: 20% 3%; 
+    /* border: 5px solid black; */
+    }
+    
+    /* a div with a background image */
+
+
+    .bgimg {
+        background-image: url("Felipe0269.jpg");
+        background-size: 100vh;
+        /* background-position: left top; */
+        background-position: 20% 0%;
+        background-repeat: no-repeat;
+        /* background-size: 100%; */
+        /* position:fixed; */
+        /* width: 100%; */
+        height: 100%;
+        /* border: 10px solid red; */
+        align-self: center;
+        /* padding: 0%; */
+    }
+
+    @media screen and (min-width: 1000px) {
+        .bgpos {
+        background-position: right top;
+        }
+    }
+
+    .wrapping {
+        /* display: flex; */
+        /* align the inner divs to the middle of the screen */
+        /* align-items: center; */
+        margin: 1em;
+        height: 95vh;
+        margin: 1em;
+        border: 0.5em solid black;
+    }
+
+    /* .content {
+        display:flex;
+        flex-direction: column;
+    } */
+
+</style>
+
+<body>
+    <div class="wrapping">
+
+        <div class="bgimg bgpos">
+            <!-- a black border div centered -->
+            <div class="content">
+                <button class="accent"> bio </button><br>
+                <button class="accent"> thoughts </button><br>
+                <button class="accent"> contact </button>
+            </div>
+        </div>
+    </div>
+</body>
